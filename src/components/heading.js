@@ -23,7 +23,9 @@ const Heading = ({variant, as, children}) => {
 };
 
 Heading.propTypes = {
-	variant: PropTypes.string.isRequired,
+	variant: PropTypes.oneOf([
+		'one', 'two', 'three', 'four', 'five', 'six', 'sixUppercase',
+	]).isRequired,
 	as: PropTypes.string,
 	children: PropTypes.node.isRequired,
 };
