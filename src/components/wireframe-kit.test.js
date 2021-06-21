@@ -5,7 +5,7 @@ import WireframeKit from './wireframe-kit.js';
 
 test('snapshot', () => {
 	const result = renderer.create(
-		<WireframeKit/>
+		<WireframeKit/>,
 	).toJSON();
 
 	expect(result).toMatchSnapshot();

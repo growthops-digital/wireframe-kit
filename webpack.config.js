@@ -6,7 +6,7 @@ module.exports = {
 	entry: './src/showcase/index.js',
 	output: {
 		path: path.resolve('./build'),
-		filename: 'bundle.js'
+		filename: 'bundle.js',
 	},
 	devtool: 'source-map',
 	module: {
@@ -15,31 +15,31 @@ module.exports = {
 				test: /\.(js|jsx)$/,
 				exclude: /node_modules/,
 				use: {
-					loader: 'babel-loader'
-				}
+					loader: 'babel-loader',
+				},
 			},
 			{
 				test: /\.css$/,
 				use: [
 					'style-loader',
 					'css-loader',
-					'postcss-loader'
-				]
+					'postcss-loader',
+				],
 			},
 			{
 				test: /\.html$/,
 				use: [
 					{
-						loader: 'html-loader'
-					}
-				]
-			}
-		]
+						loader: 'html-loader',
+					},
+				],
+			},
+		],
 	},
 	plugins: [
 		new HtmlWebPackPlugin({
 			template: './src/showcase/index.html',
-			filename: './index.html'
-		})
-	]
+			filename: './index.html',
+		}),
+	],
 };
