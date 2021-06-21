@@ -19,7 +19,7 @@ test('snapshot — text regular (explicit)', () => {
 	expect(result).toMatchSnapshot();
 });
 
-test('snapshot — text regular', () => {
+test('snapshot — text regular (implicit)', () => {
 	const result = renderer.create(
 		<Text>Foo</Text>,
 	).toJSON();
@@ -37,7 +37,7 @@ test('snapshot — text small', () => {
 
 test('text is rendered', () => {
 	render(
-		<Text variant="one">Foo</Text>,
+		<Text variant="regular">Foo</Text>,
 	);
 
 	const result = screen.getByText('Foo');
