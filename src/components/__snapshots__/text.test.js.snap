@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['snapshot — text large 1'] = `
+<p
+  className="paragraph-large"
+>
+  Foo
+</p>
+`;
+
+exports['snapshot — text regular (explicit) 1'] = `
+<p
+  className="paragraph-regular"
+>
+  Foo
+</p>
+`;
+
+exports['snapshot — text regular 1'] = `
+<p
+  className="paragraph-regular"
+>
+  Foo
+</p>
+`;
+
+exports['snapshot — text small 1'] = `
+<p
+  className="paragraph-small"
+>
+  Foo
+</p>
+`;

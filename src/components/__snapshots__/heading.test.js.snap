@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['snapshot — heading five 1'] = `
+<h5
+  className="heading-five"
+>
+  Foo
+</h5>
+`;
+
+exports['snapshot — heading four 1'] = `
+<h4
+  className="heading-four"
+>
+  Foo
+</h4>
+`;
+
+exports['snapshot — heading one 1'] = `
+<h1
+  className="heading-one"
+>
+  Foo
+</h1>
+`;
+
+exports['snapshot — heading one casted as heading two 1'] = `
+<h2
+  className="heading-one"
+>
+  Foo
+</h2>
+`;
+
+exports['snapshot — heading six 1'] = `
+<h6
+  className="heading-six"
+>
+  Foo
+</h6>
+`;
+
+exports['snapshot — heading six uppercase 1'] = `
+<h6
+  className="heading-six-uppercase"
+>
+  Foo
+</h6>
+`;
+
+exports['snapshot — heading three 1'] = `
+<h3
+  className="heading-three"
+>
+  Foo
+</h3>
+`;
+
+exports['snapshot — heading two 1'] = `
+<h2
+  className="heading-two"
+>
+  Foo
+</h2>
+`;
