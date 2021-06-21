@@ -14,7 +14,7 @@ const Text = ({variant, children}) => (
 );
 
 Text.propTypes = {
-	variant: PropTypes.string,
+	variant: PropTypes.oneOf(['large', 'regular', 'small']),
 	children: PropTypes.node.isRequired,
 };
 
