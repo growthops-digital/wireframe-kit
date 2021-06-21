@@ -2,22 +2,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const headings = {
-	one: {html: 'h1', className: 'heading-one'},
-	two: {html: 'h2', className: 'heading-two'},
-	three: {html: 'h3', className: 'heading-three'},
-	four: {html: 'h4', className: 'heading-four'},
-	five: {html: 'h5', className: 'heading-five'},
-	six: {html: 'h6', className: 'heading-six'},
-	sixUppercase: {html: 'h6', className: 'heading-six-uppercase'},
+	one: {element: 'h1', className: 'heading-one'},
+	two: {element: 'h2', className: 'heading-two'},
+	three: {element: 'h3', className: 'heading-three'},
+	four: {element: 'h4', className: 'heading-four'},
+	five: {element: 'h5', className: 'heading-five'},
+	six: {element: 'h6', className: 'heading-six'},
+	sixUppercase: {element: 'h6', className: 'heading-six-uppercase'},
 };
 
 const Heading = ({variant, as, children}) => {
-	const Element = as ?? headings[variant].html;
+	const {element, className} = headings[variant];
+	const RenderableElement = as ?? element;
 
 	return (
-		<Element className={headings[variant].className}>
+		<RenderableElement className={className}>
 			{children}
-		</Element>
+		</RenderableElement>
 	);
 };
 
