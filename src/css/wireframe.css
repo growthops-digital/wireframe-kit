@@ -30,8 +30,7 @@
 	@apply text-xl;
 }
 
-.heading-six-uppercase,
-.markdown h6 {
+.heading-six-uppercase {
 	@apply text-base uppercase;
 }
 
