@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const headings = {
+	headline: {element: 'p', className: 'headline'},
 	one: {element: 'h1', className: 'heading-one'},
 	two: {element: 'h2', className: 'heading-two'},
 	three: {element: 'h3', className: 'heading-three'},
@@ -11,12 +12,12 @@ const headings = {
 	sixUppercase: {element: 'h6', className: 'heading-six-uppercase'},
 };
 
-const Heading = ({variant, as, children}) => {
+const Heading = ({variant, as, children, className: customClassName}) => {
 	const {element, className} = headings[variant];
 	const RenderableElement = as ?? element;
 
 	return (
-		<RenderableElement className={className}>
+		<RenderableElement className={`${className} ${customClassName}`}>
 			{children}
 		</RenderableElement>
 	);
@@ -24,10 +25,22 @@ const Heading = ({variant, as, children}) => {
 
 Heading.propTypes = {
 	variant: PropTypes.oneOf([
-		'one', 'two', 'three', 'four', 'five', 'six', 'sixUppercase',
+		'headline',
+		'one',
+		'two',
+		'three',
+		'four',
+		'five',
+		'six',
+		'sixUppercase',
 	]).isRequired,
 	as: PropTypes.string,
+	className: PropTypes.string,
 	children: PropTypes.node.isRequired,
+};
+
+Heading.defaultProps = {
+	className: '',
 };
 
 export default Heading;

@@ -8,7 +8,11 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['Roboto', ...defaultTheme.fontFamily.sans],
+				sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
+			},
+			lineHeight: {
+				11: '3.5rem',
+				12: '5rem',
 			},
 		},
 	},

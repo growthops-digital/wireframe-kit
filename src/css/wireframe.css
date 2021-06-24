@@ -1,46 +1,50 @@
 /* Wireframe kit specific css classes */
 
+.headline {
+	@apply text-7xl leading-12 font-semibold tracking-tight;
+}
+
 .heading-one,
 .markdown h1 {
-	@apply text-6xl;
+	@apply text-5xl leading-11 font-semibold tracking-tight;
 }
 
 .heading-two,
 .markdown h2 {
-	@apply text-5xl;
+	@apply text-4xl font-semibold;
 }
 
 .heading-three,
 .markdown h3 {
-	@apply text-4xl;
+	@apply text-3xl font-semibold;
 }
 
 .heading-four,
 .markdown h4 {
-	@apply text-3xl;
+	@apply text-2xl leading-7 font-semibold;
 }
 
 .heading-five,
 .markdown h5 {
-	@apply text-2xl;
+	@apply text-xl leading-6 font-semibold;
 }
 
 .heading-six,
 .markdown h6 {
-	@apply text-xl;
+	@apply text-base leading-5 font-semibold;
 }
 
 .heading-six-uppercase {
-	@apply text-base uppercase;
+	@apply text-sm uppercase font-bold tracking-wider;
 }
 
 .paragraph-large {
-	@apply text-xl;
+	@apply text-xl leading-8;
 }
 
 .paragraph-regular,
 .markdown p {
-	@apply text-base;
+	@apply text-base leading-7;
 }
 
 .paragraph-small,
