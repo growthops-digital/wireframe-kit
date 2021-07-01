@@ -12,8 +12,8 @@ const Typography = () => (
 		</div>
 		<div className="mt-4 container mx-auto">
 			<div className="flex-col space-y-6 max-w-3xl">
-				<Heading variant="headline">Headline</Heading>
-				<Heading variant="one">Heading one</Heading>
+				<Heading variant="headline" as="h2">Headline</Heading>
+				<Heading variant="one" as="h2">Heading one</Heading>
 				<Heading variant="two">Heading two</Heading>
 				<Heading variant="three">Heading three</Heading>
 				<Heading variant="four">Heading four</Heading>
