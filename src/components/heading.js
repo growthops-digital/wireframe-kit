@@ -12,12 +12,12 @@ const headings = {
 	sixUppercase: {element: 'h6', className: 'heading-six-uppercase'},
 };
 
-const Heading = ({variant, as, children, className: customClassName}) => {
-	const {element, className} = headings[variant];
+const Heading = ({variant, as, children, className}) => {
+	const {element, className: variantClassName} = headings[variant];
 	const RenderableElement = as ?? element;
 
 	return (
-		<RenderableElement className={`${className} ${customClassName}`.trim()}>
+		<RenderableElement className={`${variantClassName} ${className}`.trim()}>
 			{children}
 		</RenderableElement>
 	);

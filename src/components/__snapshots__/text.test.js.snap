@@ -8,6 +8,14 @@ exports[`snapshot — text large 1`] = `
 </p>
 `;
 
+exports[`snapshot — text large with custom classes 1`] = `
+<p
+  className="paragraph-large text-blue-500"
+>
+  Foo
+</p>
+`;
+
 exports[`snapshot — text regular (explicit) 1`] = `
 <p
   className="paragraph-regular"

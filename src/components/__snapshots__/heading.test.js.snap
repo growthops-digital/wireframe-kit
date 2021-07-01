@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports['snapshot — heading five 1'] = `
+exports[`snapshot — heading five 1`] = `
 <h5
   className="heading-five"
 >
@@ -8,7 +8,7 @@ exports['snapshot — heading five 1'] = `
 </h5>
 `;
 
-exports['snapshot — heading four 1'] = `
+exports[`snapshot — heading four 1`] = `
 <h4
   className="heading-four"
 >
@@ -16,7 +16,7 @@ exports['snapshot — heading four 1'] = `
 </h4>
 `;
 
-exports['snapshot — heading one 1'] = `
+exports[`snapshot — heading one 1`] = `
 <h1
   className="heading-one"
 >
@@ -24,7 +24,7 @@ exports['snapshot — heading one 1'] = `
 </h1>
 `;
 
-exports['snapshot — heading one casted as heading two 1'] = `
+exports[`snapshot — heading one casted as heading two 1`] = `
 <h2
   className="heading-one"
 >
@@ -32,7 +32,15 @@ exports['snapshot — heading one casted as heading two 1'] = `
 </h2>
 `;
 
-exports['snapshot — heading six 1'] = `
+exports[`snapshot — heading one with custom classes 1`] = `
+<h1
+  className="heading-one text-blue-500"
+>
+  Foo
+</h1>
+`;
+
+exports[`snapshot — heading six 1`] = `
 <h6
   className="heading-six"
 >
@@ -40,7 +48,7 @@ exports['snapshot — heading six 1'] = `
 </h6>
 `;
 
-exports['snapshot — heading six uppercase 1'] = `
+exports[`snapshot — heading six uppercase 1`] = `
 <h6
   className="heading-six-uppercase"
 >
@@ -48,7 +56,7 @@ exports['snapshot — heading six uppercase 1'] = `
 </h6>
 `;
 
-exports['snapshot — heading three 1'] = `
+exports[`snapshot — heading three 1`] = `
 <h3
   className="heading-three"
 >
@@ -56,7 +64,7 @@ exports['snapshot — heading three 1'] = `
 </h3>
 `;
 
-exports['snapshot — heading two 1'] = `
+exports[`snapshot — heading two 1`] = `
 <h2
   className="heading-two"
 >
