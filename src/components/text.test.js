@@ -11,6 +11,14 @@ test('snapshot — text large', () => {
 	expect(result).toMatchSnapshot();
 });
 
+test('snapshot — text large with custom classes', () => {
+	const result = renderer.create(
+		<Text className="text-blue-500" variant="large">Foo</Text>,
+	).toJSON();
+
+	expect(result).toMatchSnapshot();
+});
+
 test('snapshot — text regular (explicit)', () => {
 	const result = renderer.create(
 		<Text variant="regular">Foo</Text>,

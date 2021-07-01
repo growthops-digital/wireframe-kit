@@ -17,7 +17,7 @@ const Heading = ({variant, as, children, className: customClassName}) => {
 	const RenderableElement = as ?? element;
 
 	return (
-		<RenderableElement className={`${className} ${customClassName}`}>
+		<RenderableElement className={`${className} ${customClassName}`.trim()}>
 			{children}
 		</RenderableElement>
 	);

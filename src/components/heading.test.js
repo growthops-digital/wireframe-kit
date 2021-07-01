@@ -11,6 +11,14 @@ test('snapshot — heading one', () => {
 	expect(result).toMatchSnapshot();
 });
 
+test('snapshot — heading one with custom classes', () => {
+	const result = renderer.create(
+		<Heading className="text-blue-500" variant="one">Foo</Heading>,
+	).toJSON();
+
+	expect(result).toMatchSnapshot();
+});
+
 test('snapshot — heading two', () => {
 	const result = renderer.create(
 		<Heading variant="two">Foo</Heading>,
