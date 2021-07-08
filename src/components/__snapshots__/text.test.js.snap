@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`snapshot — text large 1`] = `
+exports[`snapshot — text lead 1`] = `
 <p
-  className="paragraph-large"
+  className="text-lead"
 >
   Foo
 </p>
 `;
 
-exports[`snapshot — text large with custom classes 1`] = `
+exports[`snapshot — text lead with custom classes 1`] = `
 <p
-  className="paragraph-large text-blue-500"
+  className="text-lead text-blue-500"
 >
   Foo
 </p>
@@ -18,7 +18,7 @@ exports[`snapshot — text large with custom classes 1`] = `
 
 exports[`snapshot — text regular (explicit) 1`] = `
 <p
-  className="paragraph-regular"
+  className="text-regular"
 >
   Foo
 </p>
@@ -26,7 +26,7 @@ exports[`snapshot — text regular (explicit) 1`] = `
 
 exports[`snapshot — text regular (implicit) 1`] = `
 <p
-  className="paragraph-regular"
+  className="text-regular"
 >
   Foo
 </p>
@@ -34,7 +34,7 @@ exports[`snapshot — text regular (implicit) 1`] = `
 
 exports[`snapshot — text small 1`] = `
 <p
-  className="paragraph-small"
+  className="text-small"
 >
   Foo
 </p>

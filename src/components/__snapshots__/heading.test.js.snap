@@ -48,14 +48,6 @@ exports[`snapshot — heading six 1`] = `
 </h6>
 `;
 
-exports[`snapshot — heading six uppercase 1`] = `
-<h6
-  className="heading-six-uppercase"
->
-  Foo
-</h6>
-`;
-
 exports[`snapshot — heading three 1`] = `
 <h3
   className="heading-three"
@@ -70,4 +62,12 @@ exports[`snapshot — heading two 1`] = `
 >
   Foo
 </h2>
+`;
+
+exports[`snapshot — subheading 1`] = `
+<h6
+  className="subheading"
+>
+  Foo
+</h6>
 `;

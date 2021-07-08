@@ -59,9 +59,9 @@ test('snapshot — heading six', () => {
 	expect(result).toMatchSnapshot();
 });
 
-test('snapshot — heading six uppercase', () => {
+test('snapshot — subheading', () => {
 	const result = renderer.create(
-		<Heading variant="sixUppercase">Foo</Heading>,
+		<Heading variant="subheading">Foo</Heading>,
 	).toJSON();
 
 	expect(result).toMatchSnapshot();
@@ -145,9 +145,9 @@ test('heading variant six is rendered as h6', () => {
 	expect(result).not.toBeNull();
 });
 
-test('heading variant six uppercase is rendered as h6', () => {
+test('heading variant subheading is rendered as h6', () => {
 	const {container} = render(
-		<Heading variant="sixUppercase">Foo</Heading>,
+		<Heading variant="subheading">Foo</Heading>,
 	);
 
 	const result = container.querySelector('h6');

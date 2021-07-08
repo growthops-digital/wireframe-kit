@@ -1,27 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {collapse} from '@growthops/ext-ramda';
 
-const paragraphClassNames = {
-	large: 'paragraph-large',
-	regular: 'paragraph-regular',
-	small: 'paragraph-small',
+const classNames = {
+	lead: 'text-lead',
+	regular: 'text-regular',
+	small: 'text-small',
 };
 
-const Text = ({variant, children, className}) => (
-	<p className={`${paragraphClassNames[variant]} ${className}`.trim()}>
+const Text = ({variant, children, as: Element, className}) => (
+	<Element className={collapse(`${classNames[variant]} ${className}`)}>
 		{children}
-	</p>
+	</Element>
 );
 
 Text.propTypes = {
-	variant: PropTypes.oneOf(['large', 'regular', 'small']),
+	variant: PropTypes.oneOf(['lead', 'regular', 'small']),
 	children: PropTypes.node.isRequired,
 	className: PropTypes.string,
+	as: PropTypes.string,
 };
 
 Text.defaultProps = {
 	variant: 'regular',
 	className: '',
+	as: 'p',
 };
 
 export default Text;

@@ -3,17 +3,17 @@ import renderer from 'react-test-renderer';
 import {render, screen} from '@testing-library/react';
 import Text from './text.js';
 
-test('snapshot — text large', () => {
+test('snapshot — text lead', () => {
 	const result = renderer.create(
-		<Text variant="large">Foo</Text>,
+		<Text variant="lead">Foo</Text>,
 	).toJSON();
 
 	expect(result).toMatchSnapshot();
 });
 
-test('snapshot — text large with custom classes', () => {
+test('snapshot — text lead with custom classes', () => {
 	const result = renderer.create(
-		<Text className="text-blue-500" variant="large">Foo</Text>,
+		<Text className="text-blue-500" variant="lead">Foo</Text>,
 	).toJSON();
 
 	expect(result).toMatchSnapshot();
@@ -59,6 +59,16 @@ test('text is rendered as p', () => {
 	);
 
 	const result = container.querySelector('p');
+
+	expect(result).not.toBeNull();
+});
+
+test('text is rendered as span', () => {
+	const {container} = render(
+		<Text as="span">Foo</Text>,
+	);
+
+	const result = container.querySelector('span');
 
 	expect(result).not.toBeNull();
 });

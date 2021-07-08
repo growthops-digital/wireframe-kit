@@ -34,20 +34,20 @@
 	@apply text-base leading-5 font-semibold;
 }
 
-.heading-six-uppercase {
+.subheading {
 	@apply text-sm uppercase font-bold tracking-wider;
 }
 
-.paragraph-large {
+.text-lead {
 	@apply text-xl leading-8;
 }
 
-.paragraph-regular,
+.text-regular,
 .markdown p {
 	@apply text-base leading-7;
 }
 
-.paragraph-small,
+.text-small,
 .markdown small {
 	@apply text-sm;
 }

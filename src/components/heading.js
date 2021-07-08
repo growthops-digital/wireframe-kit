@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {collapse} from '@growthops/ext-ramda';
 
 const headings = {
 	headline: {element: 'p', className: 'headline'},
@@ -9,7 +10,7 @@ const headings = {
 	four: {element: 'h4', className: 'heading-four'},
 	five: {element: 'h5', className: 'heading-five'},
 	six: {element: 'h6', className: 'heading-six'},
-	sixUppercase: {element: 'h6', className: 'heading-six-uppercase'},
+	subheading: {element: 'h6', className: 'subheading'},
 };
 
 const Heading = ({variant, as, children, className}) => {
@@ -17,7 +18,7 @@ const Heading = ({variant, as, children, className}) => {
 	const RenderableElement = as ?? element;
 
 	return (
-		<RenderableElement className={`${variantClassName} ${className}`.trim()}>
+		<RenderableElement className={collapse(`${variantClassName} ${className}`)}>
 			{children}
 		</RenderableElement>
 	);
@@ -32,7 +33,7 @@ Heading.propTypes = {
 		'four',
 		'five',
 		'six',
-		'sixUppercase',
+		'subheading',
 	]).isRequired,
 	as: PropTypes.string,
 	className: PropTypes.string,
